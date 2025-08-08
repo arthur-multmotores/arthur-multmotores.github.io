@@ -69,22 +69,12 @@
          <img src="https://www.multmotores.com.br/imagens/logo-multmotores.png" alt="Logo Multmotores">
          </a>
       </div>
-      <script>
-         (function (o, c, t, a, d, e, s, k) {
-           o.octadesk = o.octadesk || {};
-           o.octadesk.chatOptions = {
-             subDomain: a,
-             showButton: d,
-             openOnMessage: e,
-             showFooterPoweredBy: k,
-             hide: s
-           };
-           var bd = c.getElementsByTagName("body")[0];
-           var sc = c.createElement("script");
-           sc.async = 1;
-           sc.src = t;
-           bd.appendChild(sc);
-         })(window, document, 'https://cdn.octadesk.com/embed.js', 'o212774-1c9',  'true', 'true', 'false', 'false');
-      </script>
+      <script type="module">
+import Chatbox from 'https://cdn.jsdelivr.net/npm/@chatvolt/embeds@latest/dist/chatbox/index.js';
+
+const widget = await Chatbox.initBubble({
+  agentId: 'cme1u9c280bbmhbmys337xx5c',
+});
+</script>
    </body>
 </html>
