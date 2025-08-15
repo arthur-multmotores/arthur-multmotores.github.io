@@ -9,26 +9,22 @@
 			margin: 0;
 			font-family: Arial, sans-serif;
 			background-color: #ffffff;
-			/* Removendo a centralização flex /
-			/ display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			height: 100vh; /
-			min-height: 100vh; / Garante que o body ocupe pelo menos a altura da tela /
-			position: relative; / Necessário para posicionar elementos fixos corretamente em alguns casos /
-			padding-bottom: 60px; / Adiciona um espaço na parte inferior para o chat não sobrepor o conteúdo (se houver) /
+			min-height: 100vh;
+			position: relative;
+			/* Aumentando o padding-bottom para garantir espaço para o chat /
+			padding-bottom: 100px; / Ajuste este valor conforme necessário /
 			}
 			.header {
 			position: fixed;
 			top: 0;
+			left: 0; / Garante que comece na borda esquerda /
 			width: 100%;
 			background-color: rgb(230, 230, 230);
 			padding: 10px 0;
 			text-align: center;
 			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 			margin-bottom: 10px;
-			z-index: 1000; / Garante que o cabeçalho fique acima do chat /
+			z-index: 1000; / Garante que o cabeçalho fique acima de tudo /
 			}
 			.header img {
 			height: 75px;
@@ -58,9 +54,9 @@
 			background-color: #c3562d;
 			}
 			@media (max-width: 600px) {
-			/ Adicionando um padding inferior ao body em telas pequenas /
 			body {
-			padding-bottom: 80px; / Ajuste este valor conforme necessário */
+			/ Aumentando ainda mais o padding-bottom para telas menores /
+			padding-bottom: 120px; / Ajuste este valor conforme necessário */
 			}
 			.container {
 			width: 95%;
